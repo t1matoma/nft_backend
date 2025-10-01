@@ -30,13 +30,13 @@ docker-compose up --build -d
 #### Run migrations inside the django container
 
 ```bash
-docker-compose exec django python manage.py makemigrations
-docker-compose exec django python manage.py migrate
+docker-compose exec django python nft_game/manage.py makemigrations
+docker-compose exec django python nft_game/manage.py migrate
 ```
 
 #### Create a superuser
 ```bash
-docker-compose exec django python manage.py createsuperuser
+docker-compose exec django python nft_game/manage.py createsuperuser
 ```
 
 #### The app will be available at:
